@@ -1,60 +1,22 @@
-// Mobile Menu Toggle
+// ===== MOBILE MENU TOGGLE =====
 const menuToggle = document.querySelector(".menu-toggle");
-const navLinks = document.querySelector(".nav-links");
+const navRight = document.querySelector(".nav-right");
 
 menuToggle.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
+  navRight.classList.toggle("active");
 });
 
-// Smooth Scroll
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute("href"))
-      .scrollIntoView({ behavior: "smooth" });
+// ===== CLOSE MENU WHEN LINK CLICKED =====
+document.querySelectorAll(".nav-right a").forEach(link => {
+  link.addEventListener("click", () => {
+    navRight.classList.remove("active");
   });
 });
 
-// Simple Typing Effect
-const words = ["Frontend Developer", "JavaScript Enthusiast", "Future Full Stack Dev"];
-let i = 0;
-let j = 0;
-let currentWord = "";
-let isDeleting = false;
-
-function type() {
-  currentWord = words[i];
-  
-  if (!isDeleting) {
-    document.getElementById("typing").textContent = currentWord.slice(0, j++);
-    if (j > currentWord.length) {
-      isDeleting = true;
-      setTimeout(type, 1000);
-      return;
-    }
-  } else {
-    document.getElementById("typing").textContent = currentWord.slice(0, j--);
-    if (j === 0) {
-      isDeleting = false;
-      i = (i + 1) % words.length;
-    }
-  }
-
-  setTimeout(type, isDeleting ? 50 : 100);
-}
-
-type();
-
-// Scroll Reveal
-const reveals = document.querySelectorAll(".reveal");
-
+// ===== NAVBAR SHADOW ON SCROLL =====
 window.addEventListener("scroll", () => {
-  reveals.forEach(section => {
-    const windowHeight = window.innerHeight;
-    const sectionTop = section.getBoundingClientRect().top;
-
-    if (sectionTop < windowHeight - 100) {
-      section.classList.add("active");
-    }
-  });
+  const header = document.querySelector("header");
+  header.style.boxShadow = window.scrollY > 50 
+    ? "0 4px 15px rgba(0,0,0,0.3)" 
+    : "none";
 });
