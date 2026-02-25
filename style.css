@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-html{
-    scroll-behavior: smooth;
-}
-
 body{
     font-family: 'Poppins', sans-serif;
     background-color: hsl(216, 28%, 7%);
@@ -331,3 +327,4 @@ h1:hover {
 .footer p {
     margin: 5px 0;
 }
+
