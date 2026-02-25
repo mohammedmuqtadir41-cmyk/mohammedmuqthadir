@@ -1,107 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Mohammed Muqthadir | Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Muqthadir Ahmed</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <header>
+    <div class="navbar">
+        <div class="nav-left">
+            <h1>Mohammed Muqthadir Ahmed</h1>
+        </div>
+        <div class="nav-right">
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+    </div>
+    </header>
 
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <div class="logo">Md Muqthadir Ahmed<span>.</span></div>
-
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-
-    <div class="menu-toggle">&#9776;</div>
-  </nav>
-
-  <!-- HERO SECTION -->
-  <section class="hero">
+   <section class="hero-section">
     <div class="hero-left">
-      <h1>Hi, I'm <span>Mohammed Muqthadir</span></h1>
-      <h2>I am a <span id="typing"></span></h2>
-      <p>Passionate about building clean, responsive and modern web applications.</p>
-      <a href="#projects" class="btn">View My Work</a>
+        <h1>Mohammed Muqthadir Ahmed</h1>
+        <h2>I'm a <span id="element"></span></h2>
+        <p>
+            Passionate about building clean, responsive and user-friendly web applications 
+            using modern frontend technologies.
+        </p>
+        <a href="#projects" class="hero-btn">View My Work</a>
     </div>
 
     <div class="hero-right">
-      <img src="b.png" alt="developer">
+        <img src="b.png" alt="Web Development Image">
     </div>
-  </section>
+</section>
+    <section class="about-section" id="about">
+        <h2>About Me</h2>
+        <p>
+             I'm a frontend developer focused on creating responsive, 
+             user-friendly websites using HTML, CSS, JavaScript and React. 
+             I love turning ideas into real digital experiences.
+        </p>
+    </section>
 
-  <section id="about" class="section reveal">
-<section id="projects" class="section dark reveal">
-<section id="skills" class="section reveal">
-<section id="contact" class="section dark reveal">
-  <!-- ABOUT -->
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>
-      I'm a frontend developer focused on creating responsive, user-friendly
-      websites using HTML, CSS, JavaScript and React. I love turning ideas into
-      real digital experiences.
-    </p>
-  </section>
+    <section class="projects-section" id="projects">
+         <h2>Projects</h2>
 
-  <section id="education" class="section reveal">
-  <h2>Education</h2>
-  <div class="education-card">
-    <h3>B.Tech in Computer Science</h3>
-    <p>Your University Name</p>
-    <p>2023 – 2027</p>
-  </div>
+         <div class="projects-container">
+
+          <div class="project-card">
+            <h3>Expense Tracker</h3>
+            <p>A web app to track income and expenses with real-time balance updates.</p>
+            <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+          </div>
+
+          <div class="project-card">
+            <h3>E-Commerce Website</h3>
+            <p>Responsive shopping platform with cart functionality and dynamic UI updates.</p>
+            <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+         </div>
+
+          <div class="project-card">
+            <h3>Quiz App</h3>
+            <p>Interactive quiz application built using DOM manipulation.</p>
+            <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+          </div>
+
+         </div>
+    </section>
+
+    <section class="skills-section" id="skills">
+    <h2>Skills</h2>
+
+    <div class="skills-container">
+        <div class="skill-box">HTML</div>
+        <div class="skill-box">CSS</div>
+        <div class="skill-box">JavaScript</div>
+        <div class="skill-box">React </div>
+        <div class="skill-box">Git & GitHub</div>
+    </div>
+    </section>
+
+    <section class="education-section" id="education">
+     <h2>Education</h2>
+
+     <div class="education-card">
+        <h3>B.Tech in Computer Science</h3>
+        <p>Mahaveer Institute of Science and Technology, Hyderabad</p>
+        <p>2023 – 2027</p>
+     </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+    <h2>Contact Me</h2>
+    <p class="contact-subtext">Feel free to reach out for internships or collaborations.</p>
+
+    <div class="contact-container">
+        <div class="contact-card">
+            <h3>Email</h3>
+            <p><a   href="https://mail.google.com/mail/?view=cm&fs=1&to=mohammedmuqtadir41@gmail.com" target="_blank" rel="noopener noreferrer" >mohammedmuqtadir41@gmail.com</a></p>
+        </div>
+
+        <div class="contact-card">
+            <h3>GitHub</h3>
+            <p><a href="https://github.com/mohammedmuqtadir41-cmyk" target="_blank" rel="noopener noreferrer">github.com/mohammedmuqtadir41-cmyk</a></p>
+        </div>
+
+        <div class="contact-card">
+            <h3>LinkedIn</h3>
+            <p><a href="https://www.linkedin.com/in/mohammed-muqthadir-ahmed-702052254/" target="_blank" rel="noopener noreferrer">linkedin.com/in/mohammed-muqthadir-ahmed</a></p>
+        </div>
+    </div>
 </section>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="section dark">
-    <h2>Projects</h2>
+<footer class="footer">
+    <p>© 2026 Mohammed Muqthadir Ahmed</p>
+    <p>Built with HTML, CSS & JavaScript</p>
+</footer>
 
-    <div class="project-grid">
-      <div class="card">
-        <h3>E-Commerce Website</h3>
-        <p>Responsive shopping site with cart functionality.</p>
-      </div>
+    <script>
+        var typed = new Typed('#element', {
+        strings: ['Frontend Developer', 'UI/UX Designer', 'Tech Enthusiast'],
+        loop: true,
+        typeSpeed: 50,
+        });
+    </script>
 
-      <div class="card">
-        <h3>Expense Tracker</h3>
-        <p>Track income & expenses using JavaScript logic.</p>
-      </div>
-
-      <div class="card">
-        <h3>Quiz App</h3>
-        <p>Interactive quiz built using DOM manipulation.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section id="skills" class="section">
-    <h2>Skills</h2>
-    <div class="skills">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-      <span>React </span>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section dark">
-    <h2>Contact</h2>
-    <p>Email: mohammedmuqthadir41@gmail.com</p>
-  </section>
-
-  <footer>
-    © 2026 Mohammed Muqthadir Ahmed
-  </footer>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
